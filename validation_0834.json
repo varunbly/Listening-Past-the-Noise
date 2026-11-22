@@ -1,0 +1,9 @@
+{
+  "model": "previous_frozen_ensemble",
+  "map3": 0.8338709677419355,
+  "fold_scores": [0.821236559139785, 0.8333333333333334, 0.8373655913978495, 0.8696236559139785, 0.8077956989247312],
+  "seed": 131,
+  "folds": 5,
+  "checked_recordings": 620,
+  "note": "Repeated checked-label cross-validation, not test/leaderboard accuracy. The frozen model was chosen previously; this does not establish a new independent holdout."
+}
