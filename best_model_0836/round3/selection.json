@@ -1,0 +1,105 @@
+{
+  "selection_seed": 73,
+  "confirmation_seed": 277,
+  "objective": "macro_MAP@3",
+  "power": 1.0,
+  "prior_beta": 0.25,
+  "target_prior_power": 0.0,
+  "selection_scores": {
+    "micro_map3": 0.8370967741935483,
+    "macro_map3": 0.8478658536585366,
+    "per_class": [
+      0.8833333333333334,
+      0.85,
+      0.8625,
+      0.4,
+      0.5708333333333333,
+      0.95,
+      0.9,
+      0.7333333333333333,
+      1.0,
+      1.0,
+      0.9333333333333332,
+      0.7333333333333333,
+      0.95,
+      0.9833333333333332,
+      0.9,
+      1.0,
+      0.95,
+      1.0,
+      0.95,
+      0.85,
+      1.0,
+      0.8,
+      0.8833333333333332,
+      0.9,
+      0.95,
+      0.3666666666666666,
+      0.9,
+      1.0,
+      0.7,
+      1.0,
+      0.9,
+      1.0,
+      1.0,
+      0.5166666666666666,
+      0.65,
+      0.8958333333333333,
+      0.85,
+      0.75,
+      0.65,
+      0.7,
+      0.95
+    ]
+  },
+  "models": [
+    {
+      "name": "r2_ensemble",
+      "weight": 0.6400000000000001,
+      "config": null
+    },
+    {
+      "name": "log12_k64_w0.6_p1.0_t0.0",
+      "weight": 0.16000000000000003,
+      "config": {
+        "name": "log12_k64_w0.6_p1.0_t0.0",
+        "view": "log12_k64",
+        "weight": 0.6,
+        "k": 10,
+        "prior": 1.0,
+        "target_power": 0.0
+      }
+    },
+    {
+      "name": "pcen24_k64_w0.6_p1.0_t0.0",
+      "weight": 0.2,
+      "config": {
+        "name": "pcen24_k64_w0.6_p1.0_t0.0",
+        "view": "pcen24_k64",
+        "weight": 0.6,
+        "k": 10,
+        "prior": 1.0,
+        "target_power": 0.0
+      }
+    }
+  ],
+  "configs": [
+    {
+      "name": "log12_k64_w0.6_p1.0_t0.0",
+      "view": "log12_k64",
+      "weight": 0.6,
+      "k": 10,
+      "prior": 1.0,
+      "target_power": 0.0
+    },
+    {
+      "name": "pcen24_k64_w0.6_p1.0_t0.0",
+      "view": "pcen24_k64",
+      "weight": 0.6,
+      "k": 10,
+      "prior": 1.0,
+      "target_power": 0.0
+    }
+  ],
+  "note": "Public leaderboard labels are unavailable and its single aggregate score was not optimized. Macro MAP@3 counteracts unequal checked support; it is not the competition metric unless test classes are balanced."
+}

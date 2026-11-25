@@ -1,0 +1,106 @@
+{
+  "selection_seed": 73,
+  "confirmation_seed": 419,
+  "power": 0.5,
+  "beta": 0.0,
+  "objective": "macro_MAP@3_with_micro_floor",
+  "selection_metrics": {
+    "micro_map3": 0.8534946236559139,
+    "macro_map3": 0.8674796747967479,
+    "per_class": [
+      0.8833333333333334,
+      0.85,
+      0.8458333333333334,
+      0.36666666666666664,
+      0.575,
+      1.0,
+      0.9,
+      0.7833333333333333,
+      1.0,
+      1.0,
+      0.95,
+      0.8833333333333332,
+      0.95,
+      0.975,
+      0.95,
+      1.0,
+      1.0,
+      1.0,
+      0.95,
+      0.85,
+      1.0,
+      0.85,
+      0.95,
+      0.9,
+      0.9,
+      0.4333333333333333,
+      0.95,
+      1.0,
+      0.7833333333333333,
+      1.0,
+      0.9333333333333332,
+      1.0,
+      1.0,
+      0.6,
+      0.6833333333333333,
+      0.9,
+      0.85,
+      0.8125,
+      0.675,
+      0.7,
+      0.9333333333333332
+    ]
+  },
+  "models": [
+    {
+      "name": "previous",
+      "weight": 0.7224999999999999,
+      "config": null
+    },
+    {
+      "name": "context_k10_r0.2_sFalse",
+      "weight": 0.15,
+      "config": {
+        "name": "context_k10_r0.2_sFalse",
+        "kind": "context",
+        "view": "base",
+        "k": 10,
+        "prior": 1.0,
+        "reciprocal": 0.2,
+        "shared": false
+      }
+    },
+    {
+      "name": "gabor_w0.5_k5",
+      "weight": 0.1275,
+      "config": {
+        "name": "gabor_w0.5_k5",
+        "kind": "graph",
+        "view": "gabor",
+        "weight": 0.5,
+        "k": 5,
+        "prior": 1.0
+      }
+    }
+  ],
+  "configs": [
+    {
+      "name": "context_k10_r0.2_sFalse",
+      "kind": "context",
+      "view": "base",
+      "k": 10,
+      "prior": 1.0,
+      "reciprocal": 0.2,
+      "shared": false
+    },
+    {
+      "name": "gabor_w0.5_k5",
+      "kind": "graph",
+      "view": "gabor",
+      "weight": 0.5,
+      "k": 5,
+      "prior": 1.0
+    }
+  ],
+  "note": "Frozen before seed-419 confirmation. Public score 0.83227 is recorded only as the previous submission outcome, not used to select parameters."
+}

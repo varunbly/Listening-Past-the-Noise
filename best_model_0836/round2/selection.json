@@ -1,0 +1,62 @@
+{
+  "selection_seed": 73,
+  "confirmation_seed": 131,
+  "folds": 5,
+  "selection_cv_map3": 0.8413978494623655,
+  "previous_selection_cv_map3": 0.8233870967741935,
+  "power": 0.5,
+  "models": [
+    {
+      "name": "previous_ensemble",
+      "weight": 0.675,
+      "config": null
+    },
+    {
+      "name": "augmented0.2_k10_ad0.0",
+      "weight": 0.1,
+      "config": {
+        "name": "augmented0.2_k10_ad0.0",
+        "view": "augmented0.2",
+        "k": 10,
+        "alpha": 0.5,
+        "prior": 0.5,
+        "target_power": 0.5,
+        "adaptive": 0.0
+      }
+    },
+    {
+      "name": "new_k10_ad0.0",
+      "weight": 0.225,
+      "config": {
+        "name": "new_k10_ad0.0",
+        "view": "new",
+        "k": 10,
+        "alpha": 0.5,
+        "prior": 0.5,
+        "target_power": 0.5,
+        "adaptive": 0.0
+      }
+    }
+  ],
+  "configs": [
+    {
+      "name": "augmented0.2_k10_ad0.0",
+      "view": "augmented0.2",
+      "k": 10,
+      "alpha": 0.5,
+      "prior": 0.5,
+      "target_power": 0.5,
+      "adaptive": 0.0
+    },
+    {
+      "name": "new_k10_ad0.0",
+      "view": "new",
+      "k": 10,
+      "alpha": 0.5,
+      "prior": 0.5,
+      "target_power": 0.5,
+      "adaptive": 0.0
+    }
+  ],
+  "note": "Frozen before seed-131 confirmation. Repeated CV, not an untouched test set."
+}

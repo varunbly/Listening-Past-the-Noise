@@ -15,3 +15,13 @@ submission*.csv
 run_manifest.json
 holdout_results.json
 holdout_ids.json
+
+# Explicitly publish the frozen best-model artifacts, not raw data/caches.
+!best_model_0836/**/*.npz
+!best_model_0836/**/*.joblib
+!best_model_0836/submission_round4.csv
+!best_model_0836/holdout_results.json
+best_model_0836/project4/
+best_model_0836/output/
+best_model_0836/**/*.npy
+best_model_0836/cache/audio-v1/

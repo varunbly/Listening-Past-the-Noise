@@ -1,5 +1,11 @@
 # Listening Past the Noise - Group 13
 
+## Current best public model: 0.836 MAP@3
+
+The complete highest-public-score pipeline is in **[best_model_0836](best_model_0836/README.md)**, including training/inference code, trained audio dictionaries, frozen ensemble checkpoints, validation evidence and the exact submission. Run `python best_model_0836/run_best.py` to verify and recreate the upload ZIP, or see its README for full retraining from competition audio. Round eight scored 0.83434; round four's **0.836** remains the best reported public score. No 0.9 public score has been achieved.
+
+The root-level code and results below are preserved as the older 0.834 **local CV** version.
+
 Classical audio classification with unchecked training labels. This repository contains the original EDA and the previous frozen ensemble that scored **0.833871 MAP@3** in the matched five-fold evaluation. It does not contain the later round-two ensemble.
 
 ## Results
