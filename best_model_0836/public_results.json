@@ -1,9 +1,0 @@
-{
-  "source": "Scores reported by the user; no test labels available.",
-  "submissions": [
-    {"model": "original frozen ensemble", "score": 0.7834},
-    {"model": "round3", "score": 0.83227},
-    {"model": "round4", "score": 0.836, "precision": "as reported", "submission_sha256": "b7c1d9df2ab959fc63dc08f525f075c92034025bc175aa4ce54118229a197157"},
-    {"model": "round8", "score": 0.83434, "submission_sha256": "345b1fded194f9b7d7cfad37fe4569c4a8b3dabdd4aacde3026ced3ab85ba1db", "note": "Corrected user report; the earlier 0.43483 was a typo."}
-  ]
-}

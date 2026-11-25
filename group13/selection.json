@@ -1,0 +1,104 @@
+{
+  "probability_power": 0.7,
+  "models": [
+    {
+      "tag": "graph_combined_k10_a0.5_p0.5_tp0.5_s42_4fold",
+      "weight": 0.4352,
+      "config": {
+        "name": "graph_combined_k10_a0.5_p0.5_tp0.5_s42_4fold",
+        "kind": "graph",
+        "view": "combined",
+        "k": 10,
+        "noise_alpha": 0.5,
+        "prior": 0.5,
+        "target_power": 0.5
+      },
+      "single_cv_map3": 0.7977150537634409
+    },
+    {
+      "tag": "graph_fisher8_k10_a0.5_p0.5_tp0.5_local",
+      "weight": 0.1088,
+      "config": {
+        "name": "graph_fisher8_k10_a0.5_p0.5_tp0.5",
+        "kind": "graph",
+        "view": "fisher8",
+        "k": 10,
+        "noise_alpha": 0.5,
+        "prior": 0.5,
+        "target_power": 0.5
+      },
+      "single_cv_map3": 0.7509408602150537
+    },
+    {
+      "tag": "pca128_g0.1_cwbalanced_s42_4fold",
+      "weight": 0.136,
+      "config": {
+        "name": "pca128_g0.1_cwbalanced",
+        "kind": "svm",
+        "C": 20,
+        "unchecked_weight": 0.4,
+        "view": "pca128",
+        "scale": false,
+        "class_weight": "balanced",
+        "gamma_factor": 0.1
+      },
+      "single_cv_map3": 0.7342069892473118
+    },
+    {
+      "tag": "fisher32_C20.0_w0.0_s42_4fold",
+      "weight": 0.17,
+      "config": {
+        "name": "fisher32_C20.0_w0.0",
+        "kind": "svm",
+        "C": 20.0,
+        "unchecked_weight": 0.0,
+        "view": "fisher32",
+        "scale": false
+      },
+      "single_cv_map3": 0.46438172043010756
+    },
+    {
+      "tag": "fisher8_g0.1_clean_prior_local",
+      "weight": 0.075,
+      "config": {
+        "name": "fisher8_g0.1_clean_prior",
+        "kind": "svm",
+        "C": 20,
+        "unchecked_weight": 0.5,
+        "view": "fisher8",
+        "scale": false,
+        "class_weight": "clean_prior",
+        "gamma_factor": 0.1
+      },
+      "single_cv_map3": 0.7724462365591398
+    },
+    {
+      "tag": "fisher8_g0.1_clean_prior_cleaner_local",
+      "weight": 0.075,
+      "config": {
+        "name": "fisher8_g0.1_clean_prior_cleaner",
+        "kind": "svm",
+        "C": 20,
+        "unchecked_weight": 0.5,
+        "view": "fisher8",
+        "scale": false,
+        "class_weight": "clean_prior",
+        "gamma_factor": 0.1,
+        "cleaner": true
+      },
+      "single_cv_map3": 0.7818548387096774
+    }
+  ],
+  "development_cv": {
+    "checked_recordings": 496,
+    "seed_42_map3": 0.8464381720430109,
+    "seed_131_map3": 0.8508064516129032,
+    "mean_map3": 0.848622311827957
+  },
+  "full_checked_cv": {
+    "seed_131_map3": 0.8497311827956988,
+    "seed_42_map3": 0.8497311827956988
+  },
+  "full_checked_cv_mean_map3": 0.8497311827956988,
+  "selection_note": "Set probability power to 0.7 after it improved the two development and two full checked-label CV evaluations. The full 620-record CV includes all checked recordings, including the fixed 124-record split; that split was not separately scored for this candidate."
+}
